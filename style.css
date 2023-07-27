@@ -3,16 +3,20 @@
     font-family: "proxima nova"; /* Название шрифта для использования */
     src: url("./fonts/proximanova_regular.ttf") format("truetype"); 
   }
+  body{
+    font-family: proxima nova, sans-serif;
+}
   /* стилі */
 
+  @media screen and (min-width: 1920px) {
+    /* Стили для разрешения до 767px */
+ 
   .main_container{
 
     margin: 0 75px;
   }
 
-body{
-    font-family: proxima nova, sans-serif;
-}
+
 
 
 header{
@@ -196,4 +200,84 @@ line-height: 18px;
     width: 18px;
     height: 28px;
     
+}
+
+
+
+.only_mobile{
+    display: none;
+}
+
+/* стиль блока проверки тестового задания */
+
+.test_task{
+    margin-top: 100px;
+}
+
+.description_test_block{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.description_test_block img{
+    width: 900px;
+}
+
+.test_task{
+    height: 120vh;
+}
+
+
+.scroll_bar {
+  width: 830px; 
+  margin-top: 37px;
+  height: 390px; 
+  overflow: auto; 
+  position: relative; 
+}
+
+.scroll_bar > span{
+
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* Псевдоэлементы для создания скролл-бара */
+.scroll_bar::before,
+.scroll_bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 8px; /* Ширина скролл-бара */
+  background-color: #FFD00E; /* Цвет скролл-бара */
+  border-radius: 4px; /* Закругленные углы */
+  opacity: 0; /* Начально прозрачный */
+  pointer-events: none; /* Игнорируем события мыши на псевдоэлементах */
+}
+
+/* Стили для вертикального скролл-бара */
+.scroll_bar::before {
+  right: 0;
+}
+
+/* Стили для горизонтального скролл-бара */
+.scroll_bar::after {
+  bottom: 0;
+  height: 8px; /* Высота горизонтального скролл-бара */
+}
+
+/* При наведении на контейнер, делаем псевдоэлементы видимыми */
+.scroll_bar:hover::before,
+.scroll_bar:hover::after {
+  opacity: 1;
+}
+
+
+
+
+
+
 }

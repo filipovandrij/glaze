@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./smartphones.css" />
+    <link rel="stylesheet" href="./tablet.css" />
+    <link rel="stylesheet" href="./desktop.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Глянець</title>
   </head>
@@ -16,7 +19,16 @@
             src="./image/logotypes/logo.svg"
             alt="Глянець"
           />
-
+          <button class="burger_btn only_mobile" tabindex="0">
+            <div class="burger">|||</div>
+            <ul class="list_of_navigation_hide">
+              <li><a href="#">Чому ми?</a></li>
+              <li><a href="#">Партнери</a></li>
+              <li><a href="#">Благодійність</a></li>
+              <li><a href="#">Про нас</a></li>
+              <li><a href="#">Drupal</a></li>
+            </ul>
+          </button>
           <ul class="list_of_navigation">
             <li><a href="#">Чому ми?</a></li>
             <li><a href="#">Партнери</a></li>
@@ -60,6 +72,10 @@
               <button></button>
               <button></button>
             </div>
+            <div class="know_more only_mobile">
+              <p>Дізнатись більше</p>
+              <img src="./image/anhor_down.svg" alt="#" />
+            </div>
           </div>
           <div class="picture_block">
             <img src="./image/man_with_laptop.svg" alt="man with laptop" />
@@ -89,14 +105,47 @@
             src="./image/bg_spot/yellow_big_spot.svg"
             alt="#"
           />
-          <div class="know_more">
+          <div class="know_more over_desktop">
             <p>Дізнатись більше</p>
             <img src="./image/anhor_down.svg" alt="#" />
           </div>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="test_task main_container">
+        <h3>Перевірка тествого завдання</h3>
+        <div class="description_test_block">
+          <img src="./image/work_process.svg" alt="work process" />
+          <div class="scroll_bar">
+            <span>
+              Ми цінуємо ваш час та зусилля, тому намагаємося забезпечити
+              оперативну відповідь на ваші тестові роботи. Наша команда
+              керівників та співробітників займається перевіркою усіх робіт
+              ВРУЧНУ перевіряє всі роботи, гарантуючи високу якість оцінки.
+              <br />
+              <b>
+                На першому етапі вашу роботу перевірить керівник HR-відділу —
+                Олена, або Анатолій Валерійович — керівник вебстудії Глянець.</b
+              ><br />Перевірку другого етапу, в залежності від посади на яку ви
+              претендуєте, буде здійснювати керівник відповідного відділу
+              (наприклад, керівник відділу верстки у разі подання заявки на
+              посаду верстальника). <br />Ми розуміємо, як важливо для вас
+              отримати швидку відповідь, тому перевіряємо ваші
+              <b>тестові завдання</b> навіть після завершення робочого дня. Наша
+              команда цінує кожного потенційного кандидата і робить усе можливе,
+              щоб забезпечити ретельну оцінку ваших здібностей та швидко
+              повідомити результат.
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="best_company"></section>
+      <section class="we"></section>
+      <section class="drupal_contribution"></section>
+      <section class="work_with"></section>
+      <section class="charity"></section>
+    </main>
     <footer></footer>
   </body>
 </html>
