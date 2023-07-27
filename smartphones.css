@@ -232,4 +232,52 @@ line-height: 18px;
 .over_desktop{
   display: none;
 }
+
+
+/* стиль блока => проверки тестового задания */
+
+.test_task{
+  margin-top: 20px;
+}
+
+.description_test_block{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.description_test_block img{
+  width: 70%;
+}
+
+
+
+
+.scroll_bar {
+width: 30%; 
+margin-top: 25px;
+height: 390px; 
+overflow: auto; 
+position: relative; 
+}
+
+.scroll_bar::-webkit-scrollbar {
+width: 8px; /* Ширина ползунка */
+}
+
+.scroll_bar::-webkit-scrollbar-thumb {
+background-color: #FFB800; /* Цвет ползунка */
+border-radius: 6px; /* Закругленные углы */
+box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); /* Тень внутри ползунка */
+}
+
+.scroll_bar > span{
+
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
+
   }

@@ -208,7 +208,7 @@ line-height: 18px;
     display: none;
 }
 
-/* стиль блока проверки тестового задания */
+/* стиль блока => проверки тестового задания */
 
 .test_task{
     margin-top: 100px;
@@ -225,9 +225,7 @@ line-height: 18px;
     width: 900px;
 }
 
-.test_task{
-    height: 120vh;
-}
+
 
 
 .scroll_bar {
@@ -244,40 +242,20 @@ line-height: 18px;
     line-height: 30px;
 }
 
-/* Псевдоэлементы для создания скролл-бара */
-.scroll_bar::before,
-.scroll_bar::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 8px; /* Ширина скролл-бара */
-  background-color: #FFD00E; /* Цвет скролл-бара */
-  border-radius: 4px; /* Закругленные углы */
-  opacity: 0; /* Начально прозрачный */
-  pointer-events: none; /* Игнорируем события мыши на псевдоэлементах */
-}
+.scroll_bar::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  .scroll_bar::-webkit-scrollbar-thumb {
+    background-color: #FFB800; 
+    border-radius: 6px; 
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+  }
 
-/* Стили для вертикального скролл-бара */
-.scroll_bar::before {
-  right: 0;
-}
-
-/* Стили для горизонтального скролл-бара */
-.scroll_bar::after {
-  bottom: 0;
-  height: 8px; /* Высота горизонтального скролл-бара */
-}
-
-/* При наведении на контейнер, делаем псевдоэлементы видимыми */
-.scroll_bar:hover::before,
-.scroll_bar:hover::after {
-  opacity: 1;
-}
+ 
 
 
 
 
 
-
-}
+  }
