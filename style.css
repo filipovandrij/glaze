@@ -1,0 +1,199 @@
+/* підключення шрифта */
+@font-face{
+    font-family: "proxima nova"; /* Название шрифта для использования */
+    src: url("./fonts/proximanova_regular.ttf") format("truetype"); 
+  }
+  /* стилі */
+
+  .main_container{
+
+    margin: 0 75px;
+  }
+
+body{
+    font-family: proxima nova, sans-serif;
+}
+
+
+header{
+    position: relative;
+    height: 960px;
+}
+
+.header{
+    padding: 16px 0;
+}
+
+.header,  .list_of_navigation, .social_media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list_of_navigation{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    color: black;
+}
+
+
+.main_logo{
+    width: 266px;
+    height: 71px;
+}
+
+.contacts_container{
+    display: flex;
+}
+.social_media{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+.social_media>img{
+    width: 35px;
+    height: 35px;
+}
+
+.phone_number{
+    margin-left: 40px;
+}
+
+.phone_number p{
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+
+
+}
+
+.phone_number a{
+    text-decoration: none;
+    color: black;
+font-size: 26px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+
+
+.header_slider{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+
+.sup_title{
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+
+}
+
+.sub_title{
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+margin-top: 20px;
+width: 88%;
+}
+
+.yellow_btn_pc{
+    margin-top: 40px;
+	background: #FFD00E;
+    border: none;
+	top: 20px;
+	left: 22px;
+	padding: 20px 82px 20px 82px;
+	border-radius: 5px;
+	gap: 10px;
+font-size: 20px;
+font-weight: 700;
+line-height: 25px;
+
+	}
+
+    .dot_btns{
+        margin-top: 211px;
+        width: 148px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dot_btns>button{
+        width: 16px;
+        height: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+    }
+
+    .dot_btns>button:nth-child(3){
+        background-color: #FFD00E;
+    }
+
+
+.picture_block{
+    padding-top: 30px;
+}
+
+
+.yellow_first_spot,
+ .yellow_second_spot,
+  .yellow_third_spot,
+   .yellow_fouth_spot,
+    .yellow_big_spot{
+    position: absolute;
+    z-index: -1;
+}
+
+
+.yellow_first_spot{
+    top:617px;
+    left:1094px;
+}
+
+.yellow_second_spot{
+    top:137px;
+    left:1190px;
+}
+.yellow_third_spot{
+    top:534px;
+    left:596px;
+}
+.yellow_fouth_spot{
+    top: 137px;
+    left: 0;
+}
+.yellow_big_spot{
+    top: 38px;
+    left: 1009px;
+}
+
+.know_more{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+height: 62px;
+top: 851px
+
+}
+
+.know_more>p{
+font-size: 14px;
+font-weight: 700;
+line-height: 18px;
+}
+.know_more>img{
+    margin-top: 16px;
+    width: 18px;
+    height: 28px;
+    
+}
